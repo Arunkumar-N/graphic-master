@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import url("../node_modules/ag-grid-community/dist/styles/ag-grid.css");
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+.dropdown-menu {
+    border-radius: 5%;
+    border: none;
+    box-shadow: 0 10px 40px 10px rgba(140,152,164,.175)
+}
+.dropdown-item {
+    font-size: .8125rem;
+}
+.fa-1_5x {
+    font-size: 1.5em;
+}
+ .container .ag-grid-angular {
+    flex-basis: 100%;
+    display: flex;
+    flex-grow: 1;
+  }
+  ag-grid-angular{
+    height: 100%;
+  }

@@ -1,0 +1,38 @@
+<div class="sidenav" [class]="{'toggle': globalService.toggleNavbar}">
+    <a href="javascript:void(0)" class="closebtn d-block d-lg-none" 
+        [class]="{'d-none': globalService.toggleNavbar}"
+        (click)="globalService.toggleNavbar = !globalService.toggleNavbar">&times;</a>
+    <div class="navbar-brand-wrapper">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.evaerp.com/helpers/img/icons/eva.png" (click)="globalService.toggleNavbar = !globalService.toggleNavbar" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span class="nav-label">SGI</span>
+        </a>
+    </div>
+    <div class="dropdown-divider"></div>
+    <a class="active" [routerLink]="['/dashboard']"><i class="fa fa-dashboard " aria-hidden="true"></i>
+        <span class="nav-label">Dashboard</span>
+    </a>
+    <a><i class="fa fa-tag" aria-hidden="true"></i>
+        <span class="nav-label">Label</span>
+    </a>
+    <a><i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span class="nav-label">Location</span>
+    </a>
+    <a><i class="fa fa-user" aria-hidden="true"></i>
+        <span class="nav-label">Lead</span>
+    </a>
+    <a><i class="fa fa-sitemap" aria-hidden="true"></i>
+        <span class="nav-label">Organization</span>
+    </a>
+    <a><i class="fa fa-home" aria-hidden="true"></i>
+        <span class="nav-label">Site</span>
+    </a>
+    <a><i class="fa fa-home" aria-hidden="true"></i>
+        <span class="nav-label">Opportunity</span>
+    </a>
+    <a><i class="fa fa-list-alt" aria-hidden="true"></i>
+        <span class="nav-label">Task</span>
+    </a>
+
+    <a class="bottom-short-brand" target="_blank" href="">SGI</a>
+  </div>

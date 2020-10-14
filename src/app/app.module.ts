@@ -10,20 +10,24 @@ import { FooterComponent } from '@shared/component/footer/footer.component';
 import { HeaderComponent } from '@shared/component/header/header.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HttpConfigInterceptor } from '@shared/interceptor/http-config.interceptor';
+import { LeftNavbarComponent } from '@shared/component/left-navbar/left-navbar.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageLayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LeftNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    AgGridModule.withComponents([])
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true }

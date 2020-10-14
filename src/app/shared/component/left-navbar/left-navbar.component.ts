@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalService } from '@shared/services/global.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-left-navbar',
+  templateUrl: './left-navbar.component.html',
+  styleUrls: ['./left-navbar.component.css']
 })
-export class HeaderComponent implements OnInit {
-
+export class LeftNavbarComponent implements OnInit {
+  
   constructor(public globalService: GlobalService) { }
 
   ngOnInit(): void {

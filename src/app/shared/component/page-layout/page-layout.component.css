@@ -1,0 +1,39 @@
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    height: 5em;
+    transition: all 0.3s ease;
+    color: #132144;;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin-left: 30px;
+    margin-right: -.25rem;
+    transform: translateY(-50%);
+}
+.icon-bar a:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.add-sticky {
+    background: #DCDCDC;
+    color: black;
+}
+
+#content {
+    width: 100%;
+    padding: 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}

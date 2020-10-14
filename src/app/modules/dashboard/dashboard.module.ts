@@ -4,6 +4,7 @@ import { DashboardPage } from './pages/dashboard/dashboard.page';
 import { SampleComponent } from './components/sample/sample.component';
 import { Sample2Component } from './components/sample2/sample2.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 
@@ -15,7 +16,8 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    AgGridModule.withComponents([])
   ]
 })
 export class DashboardModule { }

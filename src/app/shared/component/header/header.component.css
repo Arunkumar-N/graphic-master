@@ -1,34 +1,52 @@
-.toolbar {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-  .spacer {
-    flex: 1;
-  }
-  .toolbar img {
-    margin: 0 16px;
-  }
+.avatar {
+  max-width: 40px;
+  max-height: 40px;
+  width: 3.1875rem;
+  height: 3.1875rem;
+  border-radius: 50%;
+  margin:5px;
+}
+.avatar-sm {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+.search-padding {
+  padding-left:4.25rem;
+  transition: 0.5s;
+}
+.search-padding.toggle {
+  padding-left:14.25rem;
+}
+.search-input:hover {
+  background-color: #f6f7fa;
+}
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
+.avatar-circle {
+  border-radius: 50%;
+}
+.h5, h5 {
+  font-size: .875rem;
+}
+.display-flex {
+  display: flex;
+}
+.display-flex > img {
+  width: 30%;
+}
+.display-flex > div {
+  width: 60%;
+  font-size: small;
+}
+.card-title {
+  display: block;
+  color: #1e2022;
+  margin-bottom: 0;
+}
+.card-text {
+  display: block;
+  color: #677788;
+  font-size: 0.6725rem;
+}
+.rounded-border {
+  border-radius: 5%;
+}

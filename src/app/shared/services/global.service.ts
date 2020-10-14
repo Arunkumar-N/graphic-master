@@ -7,6 +7,7 @@ import { environment } from 'environments/environment';
 })
 export class GlobalService {
 
+  public toggleNavbar = false;
   constructor(private http:HttpClient) { }
 
   getSample() {
