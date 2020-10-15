@@ -12,6 +12,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HttpConfigInterceptor } from '@shared/interceptor/http-config.interceptor';
 import { LeftNavbarComponent } from '@shared/component/left-navbar/left-navbar.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { RightNavigationModule } from '@modules/right-navigation/right-navigation.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AgGridModule } from 'ag-grid-angular';
     NgbModule,
     SharedModule,
     HttpClientModule,
+    RightNavigationModule,
     AgGridModule.withComponents([])
   ],
   providers: [

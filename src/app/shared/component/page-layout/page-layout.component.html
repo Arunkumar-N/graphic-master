@@ -1,12 +1,13 @@
 <div class="bg-light">
     <app-header></app-header>
     <app-left-navbar></app-left-navbar>
+    <app-right-navigation></app-right-navigation>
     <div class="container mt-4">
         <router-outlet></router-outlet>
     </div>
     <div class="container" style="display: inline-block; width: 100%;">
-        <div class="icon-bar">
-            <a href="#" class="add-sticky">
+        <div class="icon-bar" (click)="addButtonClick();">
+            <a class="add-sticky">
                 <i class="fa fa-plus-circle" aria-hidden="true"></i>
                 <span style="transform: rotate(90deg);">&nbsp;Add </span>
             </a>

@@ -5,6 +5,7 @@ import { SampleComponent } from './components/sample/sample.component';
 import { Sample2Component } from './components/sample2/sample2.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { AgGridModule } from 'ag-grid-angular';
+import { CreateDashboardComponent } from './components/create/create-dashboard.component';
 
 
 
@@ -12,7 +13,8 @@ import { AgGridModule } from 'ag-grid-angular';
   declarations: [
     DashboardPage,
     SampleComponent,
-    Sample2Component
+    Sample2Component,
+    CreateDashboardComponent
   ],
   imports: [
     CommonModule,

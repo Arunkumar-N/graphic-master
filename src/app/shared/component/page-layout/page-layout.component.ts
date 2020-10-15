@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RightNavigationService } from '@modules/right-navigation/right-navigation.service';
 
 @Component({
   selector: 'app-page-layout',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public navService: RightNavigationService) { }
 
   ngOnInit(): void {
+  }
+  addButtonClick() {
+    this.navService.open();
+    this.navService.emitNavChangeEvent("");
+    console.log("Hello");
   }
 
 }

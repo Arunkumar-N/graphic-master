@@ -8,9 +8,11 @@ import { GlobalService } from '@shared/services/global.service';
 })
 export class LeftNavbarComponent implements OnInit {
   
+  menuList = [];
   constructor(public globalService: GlobalService) { }
 
   ngOnInit(): void {
+    this.menuList = this.globalService.getMenus();
   }
 
 }

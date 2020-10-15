@@ -28,7 +28,6 @@
     </ul>
   </div>
 
-
   <div class="form-inline my-2 my-lg-0">
     <div class="btn-group">
       <a class="nav-link" href="#"><i class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></a>
@@ -41,53 +40,25 @@
         <i class="fa fa-th-large fa-1_5x"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-right">
-        <button class="dropdown-item" type="button">Action</button>
-        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" (click)="openNav('lead');" type="button">Create Lead</button>
+        <button class="dropdown-item" (click)="openNav('dashboard');" type="button">Create Dashboard</button>
         <button class="dropdown-item" type="button">Something else here</button>
       </div>
     </div>
     
     <div class="btn-group">
         <img src="https://www.helpscout.com/images/blog/steve-jobs.jpg" alt="Avatar" class="avatar ml-2" aria-hidden="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-        <div class="dropdown-menu dropdown-menu-right"><div class=" dropdown-item media align-items-center">
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class=" dropdown-item media align-items-center">
             <img class="avatar avatar-sm avatar-circle mr-2 ml-0" src="https://www.helpscout.com/images/blog/steve-jobs.jpg" alt="Image Description">
-        <div class="media-body"><span class="card-title h5">Arunkumar N</span><span class="card-text">arunkumar@gmail.com</span></div>
-        </div>            
-        <div class="dropdown-divider"></div>
-        <button class="dropdown-item" type="button">Edit Profile</button>
-        <button class="dropdown-item" type="button">Change Password</button>
-        <div class="dropdown-divider"></div>
-        <button class="dropdown-item" type="button"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</button>
+            <div class="media-body"><span class="card-title h5">Arunkumar N</span><span class="card-text">arunkumar@gmail.com</span></div>
+          </div>            
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item" type="button">Edit Profile</button>
+          <button class="dropdown-item" type="button">Change Password</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item" type="button"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</button>
         </div>
     </div>
-  </div>
-  <div class="form-inline my-2 my-lg-0" style="display: none;">
-    <ul class="navbar-nav mr-auto form-inline my-2 my-lg-0">
-      <li class="nav-item ml-2">
-        
-      </li>
-      <li class="nav-item dropdown ml-2">
-        
-      </li>
-      <li class="nav-item ml-2 mr-2">
-        
-      </li>
-      <li class="nav-item dropdown">
-        <div class="btn-group">
-          <img src="https://www.helpscout.com/images/blog/steve-jobs.jpg" alt="Avatar" class="avatar avatar-sm avatar-circle mr-2" aria-hidden="true" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="dropdown-menu dropdown-menu-right"><div class=" dropdown-item media align-items-center">
-                <img class="avatar avatar-sm avatar-circle mr-2 ml-0" src="https://www.helpscout.com/images/blog/steve-jobs.jpg" alt="Image Description">
-              <div class="media-body"><span class="card-title h5">Arunkumar N</span><span class="card-text">arunkumar@gmail.com</span></div>
-            </div>            
-            <div class="dropdown-divider"></div>
-            <button class="dropdown-item" type="button">Edit Profile</button>
-            <button class="dropdown-item" type="button">Change Password</button>
-            <div class="dropdown-divider"></div>
-            <button class="dropdown-item" type="button"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</button>
-          </div>
-        </div>
-      </li>
-    </ul>
   </div>
 </nav>
