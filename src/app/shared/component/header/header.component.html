@@ -30,7 +30,22 @@
 
   <div class="form-inline my-2 my-lg-0">
     <div class="btn-group">
-      <a class="nav-link" href="#"><i class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></a>
+      <a class="nav-link" href="void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i></a>
+      <div class="dropdown-menu dropdown-menu-right module-dropdown">
+        <ul class="apps-ul mb-0" *ngFor="let module of modulesList| groupBy: 'group'">
+          <span>{{module.key}}</span>
+          <div class="dropdown-divider"></div>
+          <li *ngFor="let moduleVal of module.value" class="apps-li">
+            <a style="text-align: center;" (click)="openNav(moduleVal.component);">
+              <i class="app-logo fa fa-2x" [ngClass]="moduleVal.icon" aria-hidden="true"></i>
+              <span class="apps-span">{{moduleVal.name}}</span>
+            </a>
+          </li>
+        </ul>
+        <!-- <button class="dropdown-item" (click)="openNav('lead');" type="button">Create Lead</button>
+        <button class="dropdown-item" (click)="openNav('dashboard');" type="button">Create Dashboard</button>
+        <button class="dropdown-item" type="button">Something else here</button> -->
+      </div>
     </div>
     <div class="btn-group">
       <a class="nav-link" href="#"><i class="fa fa-bell-o fa-1_5x" aria-hidden="true"></i></a>
@@ -39,10 +54,13 @@
       <a class="nav-link" href="void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fa fa-th-large fa-1_5x"></i>
       </a>
-      <div class="dropdown-menu dropdown-menu-right">
-        <button class="dropdown-item" (click)="openNav('lead');" type="button">Create Lead</button>
-        <button class="dropdown-item" (click)="openNav('dashboard');" type="button">Create Dashboard</button>
-        <button class="dropdown-item" type="button">Something else here</button>
+      <div class="dropdown-menu dropdown-menu-right apps-dropdown">
+        <ul class="apps-ul">
+          <li *ngFor="let app of appsList" class="apps-li">
+            <img [src]="app.logo" alt="Avatar" class="app-logo">
+            <span class="apps-span">{{app.name}}</span>
+          </li>
+        </ul>
       </div>
     </div>
     

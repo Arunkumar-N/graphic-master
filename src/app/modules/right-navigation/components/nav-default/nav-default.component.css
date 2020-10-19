@@ -1,0 +1,34 @@
+.apps-ul {
+    padding-inline-start: 0;
+    padding-bottom: 2rem;
+}
+.apps-li {
+    text-align: center;
+    box-sizing: border-box;
+    height: 100px;
+    width: 85px;
+    padding: 1px 7px 1px 7px;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    z-index: 999;
+}
+.apps-span {
+    font-size: 14px;
+    letter-spacing: .09px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    width: 50px;
+    text-align: center;
+    color: black;
+  }
+  .app-logo {
+    margin:5px;
+    color: #007bff;
+    background-size: 50px;
+    display: inline-block;
+    height: 50px;
+    vertical-align: top;
+    width: 50px;
+  }

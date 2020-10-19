@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RightNavigationService } from '@modules/right-navigation/right-navigation.service';
+import { GlobalService } from '@shared/services/global.service';
 
 @Component({
   selector: 'app-page-layout',
@@ -8,7 +9,9 @@ import { RightNavigationService } from '@modules/right-navigation/right-navigati
 })
 export class PageLayoutComponent implements OnInit {
 
-  constructor(public navService: RightNavigationService) { }
+  constructor(
+    public navService: RightNavigationService,
+    public globalService: GlobalService) { }
 
   ngOnInit(): void {
   }

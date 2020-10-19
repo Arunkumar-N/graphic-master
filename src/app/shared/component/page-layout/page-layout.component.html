@@ -1,5 +1,6 @@
 <div class="bg-light">
     <app-header></app-header>
+    <mat-progress-bar mode="indeterminate" *ngIf="globalService.showloading"></mat-progress-bar>
     <app-left-navbar></app-left-navbar>
     <app-right-navigation></app-right-navigation>
     <div class="container mt-4">

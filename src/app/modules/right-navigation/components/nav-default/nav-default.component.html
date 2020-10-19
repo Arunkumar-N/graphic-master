@@ -1,2 +1,10 @@
-<button (click)="openNav('lead')" type="button" class="btn btn-primary">Create Lead</button>
-<button (click)="openNav('dashboard')" type="button" class="btn btn-secondary ml-2">Create Dashboard</button>
+<ul class="apps-ul mt-3" *ngFor="let module of modulesList| groupBy: 'group'">
+    <span>{{module.key}}</span>
+    <div class="dropdown-divider"></div>
+    <li *ngFor="let moduleVal of module.value" class="apps-li">
+      <a style="text-align: center;" (click)="openNav(moduleVal.component);">
+        <i class="app-logo fa fa-2x" [ngClass]="moduleVal.icon" aria-hidden="true"></i>
+        <span class="apps-span">{{moduleVal.name}}</span>
+      </a>
+    </li>
+  </ul>

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { GroupByPipe } from './pipes/group-by.pipe';
 @NgModule({
-  declarations: [],
+  declarations: [GroupByPipe],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    MatProgressBarModule
+  ], exports: [GroupByPipe]
 })
 export class SharedModule { }

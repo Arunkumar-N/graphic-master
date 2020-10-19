@@ -13,6 +13,8 @@ import { HttpConfigInterceptor } from '@shared/interceptor/http-config.intercept
 import { LeftNavbarComponent } from '@shared/component/left-navbar/left-navbar.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { RightNavigationModule } from '@modules/right-navigation/right-navigation.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RightNavigationModule } from '@modules/right-navigation/right-navigatio
     SharedModule,
     HttpClientModule,
     RightNavigationModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true }

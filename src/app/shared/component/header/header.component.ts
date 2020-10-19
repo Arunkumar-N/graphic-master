@@ -9,10 +9,16 @@ import { GlobalService } from '@shared/services/global.service';
 })
 export class HeaderComponent implements OnInit {
 
+  appsList: any[];
+  modulesList: any[];
+  notificationCount: number;
   constructor(public globalService: GlobalService,
     private navService:RightNavigationService) { }
 
   ngOnInit(): void {
+    this.appsList = this.globalService.getApps();
+    this.modulesList = this.globalService.getModules();
+    this.notificationCount = 4;
   }
   openNav(component) {
     this.navService.open();
