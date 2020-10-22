@@ -5,53 +5,14 @@
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: white; /* For browsers that do not support gradients */
-    /* background-image: linear-gradient(to right, grey, white); */
     overflow-x: hidden;
     transition: 0.5s;
     border-radius: 5px;
     box-shadow: 0 2px 2px 2px rgba(140,152,164,.175);
-    
-}
-.sidenav.toggle {
-  width: 25.25rem;
-}
-.sidenav .nav-label {
-  display: none;
-}
-.sidenav.toggle .nav-label {
-  display: inline-block;
-  font-size: 0.85em;
-  padding: 1px .65rem;
-  padding-top: .45rem;
-}
-.sidenav a {
-  padding: .5rem .75rem;
-  text-decoration: none;
-  font-size: 1rem;
-  color: black;
-  display: flex;
-  text-align: left;
-  transition: 0.3s;
-  border-color: white;
-  border-style: solid;
-  border-width: 5px;
-}
-.sidenav i {
-  padding: .5rem;
-}
-.sidenav a.active{
-  border-left-color: lightsalmon;
-  border-width: 5px;
-  border-style: solid;
-  color: #377dff;
-}
-.sidenav a.active i {
-  color: #377dff;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav.toggle {
+  width: 25.25rem;
 }
 
 .sidenav .closebtn {
@@ -61,20 +22,7 @@
   font-size: 36px;
   margin-right: 10px;
 }
-.navbar-brand-wrapper {
-  align-items: center;
-  height: 3.75rem;
-  padding-top: .75rem;
-}
-.bottom-short-brand, #sidebar .bottom-long-brand {
-    margin: 5px auto;
-    padding: 5px 10px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    bottom: 5px;
-    position: absolute;
-}
+
 @media screen and (max-width: 1023px) {
     .sidenav {
         width: 0;

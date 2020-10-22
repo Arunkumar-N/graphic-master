@@ -1,0 +1,7 @@
+<div class="theme-flex-content">
+  <span *ngFor="let theme of themes" class="theme-flex">
+    <div class="theme-sample" [style.background]="theme.color"
+    (click)="setDarkMode(theme.value);"></div>
+    <div class="theme-tile">{{theme.name}}</div>
+  </span>
+</div>

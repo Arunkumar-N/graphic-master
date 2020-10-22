@@ -24,3 +24,12 @@
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.theme-linear {
+  @import './theme-linear.scss';
+}
+.theme-dark {
+  @import './theme-dark.scss';
+}
+.theme-light {
+  @import './theme-light.scss';
+}

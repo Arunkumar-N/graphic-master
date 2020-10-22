@@ -1,0 +1,24 @@
+.theme-flex {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.theme-flex-content {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2em;
+}
+.theme-tile {
+    width: 100%;
+    margin-top: 10%;
+}
+.theme-sample {
+    width: 3em;
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: .1em solid grey;
+    box-shadow: 0 0 2rem 0 rgba(53,64,82,.1);
+}

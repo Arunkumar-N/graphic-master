@@ -17,14 +17,16 @@ export class GlobalService {
     return this.http.get<any[]>(environment.mock);
   }
   public getMenus() {
-    return [{ name: 'Dashboard', path: 'dashboard', icon: 'fa-dashboard'},
-            { name: 'Label', path: 'label', icon: 'fa-tag'},
-            { name: 'Location', path: 'location', icon: 'fa-map-marker'},
-            { name: 'Lead', path: 'lead', icon: 'fa-user'},
-            { name: 'Organization', path: 'organization', icon: 'fa-sitemap'},
-            { name: 'Site', path: 'site', icon: 'fa-home'},
-            { name: 'Opportunity', path: 'opportunity', icon: 'fa-home'},
-            { name: 'Task', path: 'task', icon: 'fa-list-alt'}];
+    return [{ name: 'Dashboard', path: 'dashboard', icon: 'fa-dashboard', group: 'Dashboard'},
+            { name: 'Add Label header', path: 'label', icon: 'fa-tag', group: 'Label'},
+            { name: 'Add Label', path: 'label', icon: 'fa-tag', group: 'Label'},
+            { name: 'Location', path: 'location', icon: 'fa-map-marker', group: 'Location'},
+            { name: 'Lead', path: 'lead', icon: 'fa-user', group: 'Lead'},
+            { name: 'Update Lead', path: 'lead/create', icon: 'fa-user', group: 'Lead'},
+            { name: 'Organization', path: 'organization', icon: 'fa-sitemap', group: 'Organization'},
+            { name: 'Site', path: 'site', icon: 'fa-home', group: 'Site'},
+            { name: 'Opportunity', path: 'opportunity', icon: 'fa-home', group: 'Opportunity'},
+            { name: 'Task', path: 'task', icon: 'fa-list-alt', group: 'Task'}];
   }
   public getApps() {
     return [{ name: 'Whatsapp', logo: 'https://i.pinimg.com/originals/99/0b/7d/990b7d2c2904f8cd9bc884d3eed6d003.png', url: ""},

@@ -9,10 +9,27 @@
         </a>
     </div>
     <div class="dropdown-divider"></div>
-    <a *ngFor="let menu of menuList" routerLinkActive="active" [routerLink]="['/', menu.path]">
-        <i class="fa" [ngClass]="menu.icon" aria-hidden="true"></i>
-        <span class="nav-label">{{menu.name}}</span>
-    </a>
+    
+    <div *ngFor="let menuGroup of menuList | groupBy: 'group'">
+        <div class="nav-item dropdown" *ngIf="menuGroup.value.length > 1">
+            <a class="nav-link  dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">
+                <i class="fa" [ngClass]="'fa-arrow-left'" aria-hidden="true"></i>
+                <span class="nav-label">{{menuGroup.key}}</span></a>
+             <ul class="dropdown-menu">
+                 <li *ngFor="let menu of menuGroup.value">
+                    <a routerLinkActive="active" [routerLink]="['/', menu.path]">
+                        <i class="fa" [ngClass]="menu.icon" aria-hidden="true"></i>
+                    <span class="nav-label">{{menu.name}}</span></a>
+                </li>
+             </ul>
+         </div>
+        <div *ngIf="menuGroup.value.length == 1">
+            <a routerLinkActive="active" [routerLink]="['/', menuGroup.value[0].path]">
+                <i class="fa" [ngClass]="menuGroup.value[0].icon" aria-hidden="true"></i>
+                <span class="nav-label">{{menuGroup.value[0].name}}</span>
+            </a>
+        </div>
+    </div>
 
-    <a class="bottom-short-brand" target="_blank" href="">SGI</a>
+    <a class="bottom-short-brand" style="border: black;" [class]="{'toggle': globalService.toggleNavbar}" target="_blank" href="">SGI</a>
 </div>

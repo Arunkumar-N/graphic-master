@@ -19,6 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "extractCss": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -26,7 +27,22 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.scss",
+              {
+                "input": "src/theme-dark.scss",
+                "lazy": true,
+                "bundleName": "theme-dark"
+              },
+              {
+                "input": "src/theme-light.scss",
+                "lazy": true,
+                "bundleName": "theme-light"
+              },
+              {
+                "input": "src/theme-linear.scss",
+                "lazy": true,
+                "bundleName": "theme-linear"
+              }
             ],
             "scripts": []
           },
@@ -91,7 +107,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

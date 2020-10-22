@@ -1,0 +1,70 @@
+.apps-li {
+    color: grey;
+}
+.apps-li a, .apps-li i{
+    color: white;
+}
+.apps-span {
+    color: white;
+}
+.navbar {
+    background-color: grey;
+}
+.sidenav {
+    background-color: grey;
+}
+.dropdown-container {
+    background-color: grey;
+}
+.sidenav a {
+    color: white;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.bottom-short-brand {
+    color: #fff;
+}
+.dropdown-toggle::after {
+    color: grey;
+}
+@media all and (min-width: 992px) {
+	.sidenav .nav-item:hover .nav-link{ color: #fff;  }
+}
+.card-body {
+    background-color: grey;//linear-gradient(#fff, #b4b4b4);
+    color:white;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px lightgray; 
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#F0F8FF, black); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey; 
+}
+.bottom-short-brand {
+    background: linear-gradient(#F0F8FF, black); 
+}
+.sidenav li a {
+    margin-left: 10%;
+}
+.sidenav .dropdown-menu li {
+    background: linear-gradient(rgb(238, 232, 232), black); 
+}
+.sidenav .dropdown-toggle::after {
+    color: antiquewhite;
+}

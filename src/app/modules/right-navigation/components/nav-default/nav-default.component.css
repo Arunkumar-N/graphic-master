@@ -1,6 +1,7 @@
 .apps-ul {
     padding-inline-start: 0;
     padding-bottom: 2rem;
+    background: transparent;
 }
 .apps-li {
     text-align: center;
@@ -10,7 +11,6 @@
     padding: 1px 7px 1px 7px;
     display: inline-block;
     vertical-align: top;
-    color: black;
     z-index: 999;
 }
 .apps-span {
@@ -21,9 +21,8 @@
     margin-left: 4px;
     width: 50px;
     text-align: center;
-    color: black;
-  }
-  .app-logo {
+}
+.app-logo {
     margin:5px;
     color: #007bff;
     background-size: 50px;
@@ -31,4 +30,4 @@
     height: 50px;
     vertical-align: top;
     width: 50px;
-  }
+}

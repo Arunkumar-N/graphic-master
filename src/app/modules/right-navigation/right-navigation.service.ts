@@ -1,6 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { CreateDashboardComponent } from '@modules/dashboard/components/create/create-dashboard.component';
 import { CreateLeadComponent } from '@modules/lead/components/create/create-lead.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,7 @@ export class RightNavigationService {
   }
   private componentList = {
     lead: CreateLeadComponent,
-    dashboard: CreateDashboardComponent
+    dashboard: CreateDashboardComponent,
+    settings: SettingsComponent
   }
 }
